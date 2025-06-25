@@ -13,3 +13,5 @@ RUN pacman --noconfirm -Rns chromium
 
 #Multilib
 RUN echo -e "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf && pacman -Syu --noconfirm
+
+ENV LC_ALL=de_DE.UTF-8
